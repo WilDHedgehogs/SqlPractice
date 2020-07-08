@@ -1,0 +1,15 @@
+-- 1 Создание БД
+CREATE TABLE dept (
+	dept_id INTEGER NOT NULL,
+	dname VARCHAR(20),
+	PRIMARY KEY(dept_id)
+);
+
+CREATE TABLE emp (
+	emp_id INTEGER NOT NULL,
+	dept_id INTEGER NOT NULL,
+	ename VARCHAR(15),
+	salary NUMERIC(6,2),
+	PRIMARY KEY(emp_id),
+	FOREIGN KEY(dept_id) REFERENCES dept(dept_id)
+);

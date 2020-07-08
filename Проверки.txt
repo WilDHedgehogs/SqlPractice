@@ -1,0 +1,6 @@
+-- Проверки
+Select * From dept;
+Select * From emp;
+
+DROP TABLE dept;
+DROP TABLE emp;
