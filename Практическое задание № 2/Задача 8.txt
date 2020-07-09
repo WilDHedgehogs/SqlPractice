@@ -1,0 +1,4 @@
+-- Продукт проданный определённым сотрудником
+SELECT product_name
+FROM purchase
+WHERE salesperson LIKE 'B%';
