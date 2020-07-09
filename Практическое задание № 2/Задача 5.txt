@@ -1,4 +1,4 @@
 -- null продукты
 SELECT product_name
 FROM product
-WHERE product_price is null
+WHERE product_price is null;

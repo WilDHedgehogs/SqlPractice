@@ -1,0 +1,5 @@
+-- Сотрудник с определённой фамилией и принятый на работу до определённой даты
+SELECT last_name, hiredate
+FROM person
+WHERE last_name LIKE 'B%'
+AND hiredate < '2010-03-01';
