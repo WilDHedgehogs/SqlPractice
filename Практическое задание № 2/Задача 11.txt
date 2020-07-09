@@ -1,0 +1,6 @@
+-- Определённые наименования продуктов
+SELECT product_name, laststockdate
+FROM product
+WHERE product_name LIKE '%Widget' 
+OR laststockdate IS null
+ORDER BY laststockdate DESC;
