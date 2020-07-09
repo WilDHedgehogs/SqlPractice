@@ -4,3 +4,6 @@ Select * From emp;
 
 DROP TABLE dept;
 DROP TABLE emp;
+
+TRUNCATE TABLE dept;
+TRUNCATE TABLE emp;
