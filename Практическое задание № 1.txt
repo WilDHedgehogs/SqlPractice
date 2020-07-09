@@ -24,3 +24,10 @@ INSERT INTO emp (
 ) VALUES
 	(1, 1, 'James', 1000),
 	(2, 2, 'Smith', 2000);
+	
+-- 3 Создание новой таблицы
+CREATE TABLE dept_arch (
+	dept_id INTEGER NOT NULL,
+	dname VARCHAR(20),
+	PRIMARY KEY(dept_id)
+);
