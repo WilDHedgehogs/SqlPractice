@@ -64,3 +64,6 @@ WHERE dname = 'RD';
 -- 9 Удаление сотрудника
 DELETE FROM emp
 WHERE emp_id = 1;
+
+-- 10 Очистка таблицы
+TRUNCATE TABLE emp;
