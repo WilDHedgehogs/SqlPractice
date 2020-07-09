@@ -31,3 +31,9 @@ CREATE TABLE dept_arch (
 	dname VARCHAR(20),
 	PRIMARY KEY(dept_id)
 );
+
+-- 4 Заполнение новой таблицы
+INSERT INTO dept_arch (
+	SELECT * 
+	FROM dept
+);
