@@ -37,3 +37,8 @@ INSERT INTO dept_arch (
 	SELECT * 
 	FROM dept
 );
+
+-- 5 Увеличение ЗП
+UPDATE emp
+SET salary = salary + salary * 0.15
+WHERE ename = 'Smith'
