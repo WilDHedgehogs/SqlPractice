@@ -1,0 +1,4 @@
+-- Продукт проданный сотрудниками кроме определённого
+SELECT product_name
+FROM purchase
+WHERE salesperson NOT LIKE 'B%';
