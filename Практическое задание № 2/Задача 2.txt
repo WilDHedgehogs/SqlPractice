@@ -1,2 +1,3 @@
+-- Столбцы product_name и quantity таблицы purchase
 SELECT product_name, quantity
 FROM purchase;

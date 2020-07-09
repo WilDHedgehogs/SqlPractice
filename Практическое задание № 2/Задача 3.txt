@@ -1,3 +1,4 @@
+-- Столбцы product_name и quantity таблицы purchase в обратном порядке
 SELECT product_name, quantity
 FROM purchase
 ORDER BY purchase_date DESC, product_name ASC;

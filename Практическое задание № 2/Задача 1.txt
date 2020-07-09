@@ -1,2 +1,3 @@
+-- Все записи таблицы purchase
 SELECT *
 FROM purchase;
