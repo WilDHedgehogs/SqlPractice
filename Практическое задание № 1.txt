@@ -67,3 +67,6 @@ WHERE emp_id = 1;
 
 -- 10 Очистка таблицы
 TRUNCATE TABLE emp;
+
+-- 11 Удаление таблицы
+DROP TABLE emp;
