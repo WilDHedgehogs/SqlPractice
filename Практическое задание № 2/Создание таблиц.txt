@@ -1,0 +1,36 @@
+CREATE TABLE person (
+	person_code VARCHAR(3) NOT NULL,
+	first_name VARCHAR(15),
+	last_name VARCHAR(20),
+	hiredate DATE,
+	PRIMARY KEY(person_code)
+);
+
+CREATE TABLE product (
+	product_name VARCHAR(25) NOT NULL,
+	product_price NUMERIC(8,2),
+	quantity_on_hand NUMERIC(5,0),
+	laststockdate DATE,
+	PRIMARY KEY(product_name)
+);
+
+CREATE TABLE purchase (
+	product_name VARCHAR(25),
+	salesperson VARCHAR(3),
+	purchase_date DATE,
+	quantity NUMERIC(4,2),
+	FOREIGN KEY (salesperson) REFERENCES person(person_code),
+	FOREIGN KEY (product_name) REFERENCES product(product_name)
+);
+
+CREATE TABLE purchase_archive (
+	product_name VARCHAR(25),
+	salesperson VARCHAR(3),
+	purchase_date DATE,
+	quantity NUMERIC(4,2)
+);
+
+CREATE TABLE old_item (
+	item_id CHAR(20),
+	item_desc CHAR(25)
+);
