@@ -1,0 +1,4 @@
+-- Наименование продуктов проданные в количестве от 3 до 23
+SELECT product_name
+FROM purchase
+WHERE quantity between 3 and 23
