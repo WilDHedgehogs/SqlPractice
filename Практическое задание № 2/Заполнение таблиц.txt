@@ -1,0 +1,32 @@
+INSERT INTO person VALUES
+	('BB', 'Bobby', 'Barkenhagen', '2010-02-28'),
+	('CA', 'Charlene', 'Atlas', '2010-02-01'),
+	('DS', 'Dany', 'Smith', '2002-02-15'),
+	('GA', 'Gary', 'Anderson', '2010-02-15'),
+	('JS', 'John', 'Smith', '2002-02-15'),
+	('LB', 'Laren', 'Baxter', '2010-03-01');
+	
+INSERT INTO product VALUES
+	('Chrome Phoobar', 50.00, 100, '2011-01-15'),
+	('Extra Huge Mega Phoobar +', 9.5, 1234, '2012-01-15'),
+	('Large Widget', NULL, 5, '2011-01-11'),
+	('Medium Widget', 75.00, 1000, '2010-01-15'),
+	('Round Chrome Snaphoo', 25.00, 10000, NULL),
+	('Small Widget', 99.00, 1, '2011-01-15'),
+	('Square Zinculator', 45.00, 1, '2010-12-31');
+	
+INSERT INTO purchase VALUES
+	('Small Widget', 'CA', '2011-07-14', 1.00),
+	('Medium Widget', 'BB', '2011-07-14', 75.00),
+	('Chrome Phoobar', 'GA', '2011-07-14', 2.00),
+	('Small Widget', 'GA', '2011-07-15', 8.00),
+	('Medium Widget', 'LB', '2011-07-15', 20.00),
+	('Round Chrome Snaphoo', 'CA', '2011-07-16', 5.00);
+	
+INSERT INTO purchase_archive VALUES
+	('Round Snaphoo', 'BB', '2001-06-21', 10.00),
+	('Large Harf linger', 'GA', '2001-06-22', 50.00),
+	('Medium Wodget', 'LB', '2001-06-23', 20.00),
+	('Small Widget', 'ZZ', '2001-06-24', 80.00),
+	('Chrome Phoobar', 'CA', '2001-06-25', 2.00),
+	('Small Widget', 'JT', '2001-06-26', 50.00);
