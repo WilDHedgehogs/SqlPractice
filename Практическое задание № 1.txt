@@ -60,3 +60,7 @@ INSERT INTO emp VALUES (
 UPDATE dept
 SET dname = 'RandD'
 WHERE dname = 'RD';
+
+-- 9 Удаление сотрудника
+DELETE FROM emp
+WHERE emp_id = 1;
