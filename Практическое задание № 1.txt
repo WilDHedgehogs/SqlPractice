@@ -13,3 +13,14 @@ CREATE TABLE emp (
 	PRIMARY KEY(emp_id),
 	FOREIGN KEY(dept_id) REFERENCES dept(dept_id)
 );
+
+-- 2 Заполнение БД
+INSERT INTO dept VALUES 
+	(1, 'Marketing'),
+	(2, 'RD');
+
+INSERT INTO emp (
+	emp_id, dept_id, ename, salary
+) VALUES
+	(1, 1, 'James', 1000),
+	(2, 2, 'Smith', 2000);
