@@ -1,0 +1,3 @@
+-- Минимальная и Максиальная цена в product
+SELECT MIN(product_price), MAX(product_price)
+FROM product;
