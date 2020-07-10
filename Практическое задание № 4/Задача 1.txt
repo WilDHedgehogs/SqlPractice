@@ -1,0 +1,5 @@
+-- Увеличение product_price на 15 процентов
+-- Убрал null значения для красоты
+ELECT product_price * 1.15
+FROM product
+WHERE product_price IS NOT null;
