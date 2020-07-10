@@ -1,0 +1,2 @@
+-- Полное количество лет
+SELECT TRUNCATE(DATEDIFF(CURDATE(), '1991-07-01') / 365, 0) as Years;
