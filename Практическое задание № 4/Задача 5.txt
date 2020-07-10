@@ -1,0 +1,6 @@
+-- Сумма с продаж товаров каждого наименования
+SELECT pr.product_name, SUM(pr.product_price * pur.quantity)
+FROM product as pr
+JOIN purchase as pur
+	ON pr.product_name = pur.product_name
+GROUP BY pr.product_name;
