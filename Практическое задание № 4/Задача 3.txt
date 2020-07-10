@@ -1,0 +1,4 @@
+-- Количество товаров без цены
+SELECT COUNT(*)
+FROM product
+WHERE product_price IS null;
