@@ -1,0 +1,14 @@
+-- Объединение таблиц purchase и purchase_archive с повторениями
+SELECT salesperson
+FROM purchase
+UNION ALL
+SELECT salesperson
+FROM purchase_archive;
+
+-- MySQL
+SELECT salesperson
+FROM purchase
+WHERE salesperson IN (
+	SELECT salesperson
+	FROM purchase_archive
+);
