@@ -1,0 +1,12 @@
+-- Товары, цена которых меньше цены любого товара, проданных GA
+SELECT product_name
+FROM product
+WHERE product_price < ALL (
+	SELECT product_price
+    FROM product
+    WHERE product_name IN (
+		SELECT product_name
+        FROM purchase
+        WHERE salesperson = 'GA'
+	)
+);
