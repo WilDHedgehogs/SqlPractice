@@ -1,0 +1,16 @@
+/* EXCEPT и INTERSECT не поддерживаются MySQL?
+http://www.geeksengine.com/database/multiple-table-select/minus-except.php */
+-- Коды продавцов из таблицы purchase_archive, которые не повторяются в таблице purchase
+SELECT salesperson
+FROM purchase_archive
+EXCEPT
+SELECT salesperson
+FROM purchase;
+
+-- MySQL
+SELECT salesperson
+FROM purchase_archive
+WHERE salesperson NOT IN (
+	SELECT salesperson
+	FROM purchase
+);
