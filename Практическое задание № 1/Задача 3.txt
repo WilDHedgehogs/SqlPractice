@@ -1,0 +1,6 @@
+-- 3 Создание новой таблицы
+CREATE TABLE dept_arch (
+	dept_id INTEGER NOT NULL,
+	dname VARCHAR(20),
+	PRIMARY KEY(dept_id)
+);

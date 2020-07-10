@@ -1,0 +1,5 @@
+-- 4 Заполнение новой таблицы
+INSERT INTO dept_arch (
+	SELECT * 
+	FROM dept
+);

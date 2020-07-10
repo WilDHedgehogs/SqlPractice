@@ -1,0 +1,4 @@
+-- 8 Изменение названия отеда
+UPDATE dept
+SET dname = 'RandD'
+WHERE dname = 'RD';
