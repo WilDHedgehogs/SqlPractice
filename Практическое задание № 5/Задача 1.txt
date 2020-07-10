@@ -1,0 +1,9 @@
+-- Сотрудники, которых приняли на работу в тот же день что и John Smith
+SELECT first_name, last_name
+FROM person
+WHERE hiredate = (
+	SELECT hiredate
+	FROM person
+    WHERE first_name = 'John'
+    AND last_name = 'Smith'
+);
