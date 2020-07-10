@@ -1,0 +1,3 @@
+-- Декартово произведение таблиц product и purchase
+SELECT *
+FROM product, purchase;
