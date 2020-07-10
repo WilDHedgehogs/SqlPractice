@@ -1,0 +1,8 @@
+-- Сотрудники, которые хотя бы один раз продавали
+SELECT first_name, last_name
+FROM person
+WHERE EXISTS (
+	SELECT *
+    FROM purchase
+    WHERE person.person_code = purchase.salesperson
+);
