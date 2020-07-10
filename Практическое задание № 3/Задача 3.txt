@@ -1,0 +1,7 @@
+-- Наименование товара, дата последней поставки, фамилия продавца
+SELECT pur.product_name, pr.laststockdate, per.last_name
+FROM purchase as pur
+JOIN product as pr
+	ON pur.product_name = pr.product_name
+JOIN person as per
+	ON pur.salesperson = per.person_code
