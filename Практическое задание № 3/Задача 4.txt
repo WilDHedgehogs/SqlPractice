@@ -1,0 +1,5 @@
+-- Внешнее объединение таблиц purchase и person
+SELECT pur.product_name, per.first_name, per.last_name
+FROM purchase as pur
+LEFT JOIN person as per
+	ON pur.salesperson = per.person_code;
