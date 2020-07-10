@@ -1,0 +1,4 @@
+-- Наименование проданного товара, количество и оставшееся количество
+SELECT pur.product_name, pur.quantity, pr.quantity_on_hand
+FROM purchase as pur, product as pr
+WHERE pur.product_name = pr.product_name;
