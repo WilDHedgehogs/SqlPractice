@@ -1,0 +1,7 @@
+-- Товары, цена которых ниже средней
+SELECT product_name
+FROM product
+WHERE product_price < (
+	SELECT AVG(product_price)
+	FROM product
+);
