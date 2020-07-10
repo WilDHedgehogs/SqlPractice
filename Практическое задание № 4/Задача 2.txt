@@ -1,0 +1,3 @@
+-- Количество product
+SELECT COUNT(*)
+FROM product;
